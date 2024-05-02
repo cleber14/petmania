@@ -27,7 +27,7 @@ function hideMenu(menu) {
 }
 
 // EVENTOS MOUSEOVER E MOUSEOUT PARA O ELEMENTO cach
-cach.addEventListener("mouseover", function() {
+cach.addEventListener("click", function() {
     showMenu(contSUone);
 });
 cach.addEventListener("mouseout", function() {
@@ -35,7 +35,7 @@ cach.addEventListener("mouseout", function() {
 });
 
 // EVENTOS MOUSEOVER E MOUSEOUT PARA O ELEMENTO gato
-gato.addEventListener("mouseover", function() {
+gato.addEventListener("click", function() {
     const menuGato = document.querySelector('.showup-2');
     showMenu(menuGato);
 });
@@ -45,7 +45,7 @@ gato.addEventListener("mouseout", function() {
 });
 
 // EVENTOS MOUSEOVER E MOUSEOUT PARA O ELEMENTO pass
-pass.addEventListener("mouseover", function() {
+pass.addEventListener("click", function() {
     const menuPass = document.querySelector('.showup-3');
     showMenu(menuPass);
 });
@@ -55,7 +55,7 @@ pass.addEventListener("mouseout", function() {
 });
 
 // EVENTOS MOUSEOVER E MOUSEOUT PARA O ELEMENTO prom
-prom.addEventListener("mouseover", function() {
+prom.addEventListener("click", function() {
     showMenu(contSUone);
 });
 prom.addEventListener("mouseout", function() {
@@ -63,7 +63,7 @@ prom.addEventListener("mouseout", function() {
 });
 
 // EVENTO MOUSEOVER E MOUSEOUT PARA O ELEMENTO contSUone
-contSUone.addEventListener("mouseover", function(){
+contSUone.addEventListener("click", function(){
     isMouseOverContSUone = true;
 });
 
@@ -86,7 +86,7 @@ h5Elements.forEach(function(h5) {
 });
 
 // EVENTO MOUSEOVER PARA O ELEMENTO heart
-heart.addEventListener("mouseover", function() {
+heart.addEventListener("click", function() {
     heart.setAttribute("name", "heart");
     heart.style.color = "red";
 });
@@ -101,4 +101,3 @@ produtos.forEach(function(prod) {
         window.location.href = 'pdcompras/paginaCompras.html';
     });
 });
-

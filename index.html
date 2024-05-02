@@ -12,9 +12,12 @@
     <header>
         <img src="img/Logo-PetShop-PetMania vetor.svg" alt="logo da loja" width="250px" id="logo">
 
+        <!--Container Search-->
         <div class="container-search">
-            <input type="search" name="search-place" id="search-place" placeholder="Pesquisar">
-            <ion-icon name="search-outline" id="search-icon"></ion-icon>
+            <div class="container-search-input">
+                <input type="search" name="search-place" id="search-place" placeholder="Pesquisar">
+                <ion-icon name="search-outline" id="search-icon"></ion-icon>
+            </div>
         </div>
 
         <div class="interactive-buttons">
@@ -66,6 +69,7 @@
             </div>
         </ul>
     </nav>
+
     <section class="container-banner">
         <img src="img/banner.png" alt="" id="banner-principal">
     </section>
@@ -328,30 +332,10 @@
 
     <footer>
         <h3>Sobre nós</h3>
-        <p>Este site é um projeto de estudo, desenvolvido por Cleber Souza, que utilizou PHP, JavaScript, HTML, CSS com Bootstrap e outras tecnologias. O design e o template foram planejados por Sarah Mareco, uma talentosa designer que contribuiu com sua criatividade e expertise para garantir uma experiência visualmente atraente e funcional aos usuários.</p>
-        
-        
-        <ul>
-            <h6>Redes Sociais do desenvolvedor e programador Cleber Souza</h6>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Whatsapp</a></li>
-        </ul>
+        <p>Este site é um projeto de estudo, desenvolvido por <a href="https://www.instagram.com/darzen_ofc/" target="_blank">Cleber Souza</a>, que utilizou JavaScript, HTML, CSS com Bootstrap e outras tecnologias. O design e o template foram planejados por <a href="https://www.instagram.com/v1t_tori/" target="_blank">Sarah Mareco</a>, uma talentosa designer que contribuiu com sua criatividade e expertise para garantir uma experiência visualmente atraente e funcional aos usuários.</p>
     </footer>
     <!--Início script slide-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#carouselExampleDark').on('slide.bs.carousel', function () {
-                $('.carousel-item').each(function() {
-                    $(this).fadeOut(500);
-                });
-            });
-
-            $('#carouselExampleDark').on('slid.bs.carousel', function () {
-                $('.carousel-item.active').fadeIn(500);
-            });
-        });
-    </script>
     <!--Fim do script slide-->
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

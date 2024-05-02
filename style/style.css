@@ -10,7 +10,6 @@ main h2 {
     text-align: center;
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 header {
@@ -31,6 +30,7 @@ nav {
     display: flex;
     position: relative;
     margin-bottom: 40px;
+    z-index: 999;
 }
 
 ul {
@@ -116,7 +116,10 @@ ul li a:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container-search {
+.container-search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: fit-content;
     margin: auto;
@@ -285,6 +288,7 @@ ul li a:hover {
 
 footer {
     background-color: #ffab00;
+    padding: 10px;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 40px;
@@ -303,10 +307,11 @@ footer {
     }
 
     .card {
-        width: 100%; /* Define a largura dos cards para ocupar 100% da largura da tela */
+        width: 95%; /* Define a largura dos cards para ocupar 100% da largura da tela */
         
     }
 }
+
 
 /* Media query para tornar as imagens do grupo container-group-images responsivas */
 @media screen and (max-width: 768px) {
@@ -321,6 +326,14 @@ footer {
         max-width: 300px; /* Define um tamanho máximo para as imagens */
     }
 
+    nav {
+        display: none;
+    }
+
 }
 
-
+@media screen and (max-width: 360px) {
+    .container-search {
+        display: none;
+    }
+}
